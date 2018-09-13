@@ -26,7 +26,7 @@
              document.getElementById('update-post').submit();" class="btn btn-success btn-lg">Save Post</button>
 
         <button onclick="event.preventDefault();
-             document.getElementById('delete-post-form').submit();" class="btn btn-lg btn-danger"><i class="fa fa-trash"></i></button>
+             document.getElementById('delete-post-form').submit();" class="btn btn-lg btn-danger" >Delete</button>
         <form id="delete-post-form" method="post" action="{{ route('posts.destroy', $post->id) }}">
             {{ csrf_field() }}
             {{ method_field('delete') }}
